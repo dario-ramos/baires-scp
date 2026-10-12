@@ -78,3 +78,16 @@ utils/sc_wartsfix/sc_wartsfix
 # Scamper debug files
 *.log
 
+# Python virtual environments (needed for Python bindings and acceptance tests)
+.venv
+
+# Testing artifacts
+tests/*.la
+tests/*.txt
+tests/*.warts
+tests/fuzz_*
+!tests/fuzz_*.c
+!tests/fuzz_*.h
+tests/unit_*
+!tests/unit_*.c
+!tests/unit_*.h
